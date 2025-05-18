@@ -1,2 +1,2 @@
-# Practice Data_Structures_and_Algorithms
-This folder contains code for practice of DSA
+# DSA Practice
+This repository contains various practice problems of DSA from different coding platforms.
