@@ -41,27 +41,20 @@ and more...
 - Track and revise solved problems
 - Explore multiple approaches and optimizations
 
-💡 How to Contribute
-Feel free to contribute by:
+## 💡 How to Contribute
+- Feel free to contribute by:
+- Adding new problems and solutions
+- Improving the readability of existing code
+- Fixing bugs or adding alternative approaches
 
-Adding new problems and solutions
+##### 📌 Note: Follow the existing folder and file structure while contributing.
 
-Improving the readability of existing code
+## 🧠 Useful Resources
+- LeetCode
+- GeeksforGeeks
+- HackerRank
+- Codeforces
+- CodeChef
 
-Fixing bugs or adding alternative approaches
-
-📌 Note: Follow the existing folder and file structure while contributing.
-
-🧠 Useful Resources
-LeetCode
-
-GeeksforGeeks
-
-HackerRank
-
-Codeforces
-
-InterviewBit
-
-📬 Contact
+## 📬 Contact
 For any queries or suggestions, feel free to reach out.
