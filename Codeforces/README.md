@@ -1,2 +1,2 @@
-# CodeChef Practice Problems
-This repository contains all the practice problems from CodeChef
+# Codeforces Practice Problems
+This repository contains all the practice problems from Codeforces
