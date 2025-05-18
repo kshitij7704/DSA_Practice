@@ -35,14 +35,11 @@ Each folder contains problems related to various topic solved on a particular co
 - Searching & Sorting
 and more...
 
-🎯 Goals
-Improve problem-solving skills
-
-Prepare for technical interviews
-
-Track and revise solved problems
-
-Explore multiple approaches and optimizations
+## 🎯 Goals
+- Improve problem-solving skills
+- Prepare for technical interviews
+- Track and revise solved problems
+- Explore multiple approaches and optimizations
 
 💡 How to Contribute
 Feel free to contribute by:
