@@ -2,7 +2,6 @@
 using namespace std;
 #define ll long long int
 #define for(i,p) for(int i=0;i<p;i++)
-//int main() {
  void  code(int t)
    {
     ll p;
