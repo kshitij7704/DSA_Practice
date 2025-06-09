@@ -1,9 +1,4 @@
-#include <iostream>
-#include<vector>
-#include<limits>
-#include<map>
-#include<cmath>
-#include<algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
 #define for(i,p) for(int i=0;i<p;i++)
@@ -54,3 +49,4 @@ using namespace std;
    
 	return 0;
 }
+
