@@ -5,11 +5,11 @@ int main() {
 	// your code goes here
 	int t;  cin>>t;
 	while(t--){
-	    int PC, PR, cnt1, cnt2;  // final power of chef and Rick
+	    int PC, PR, cnt1, cnt2;
 	    cin>>PC>>PR;
 	    
-	    if(PC % 9 == 0){   // if PC divisible by 9
-	        cnt1 = PC/9;  // if not
+	    if(PC % 9 == 0){
+	        cnt1 = PC/9;
 	    }
 	    else{
 	        cnt1 = PC/9 + 1;
