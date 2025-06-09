@@ -14,9 +14,7 @@ int main() {
 	        if(a[i] == '1') cnt1++;
 	        if(b[i] == '1') cnt1++;
 	    }
-	    //cout<<"cnt1= "<<cnt1<<"the size is: "<<n<<endl;
 	    int mini = min(cnt1,n*2-cnt1);
-	    //cout<<"mini is: "<<mini<<endl;
 	    for(int i=0;i<mini;i++)
 	        cout<<1;
 	    for(int i=0;i<n-mini;i++)
