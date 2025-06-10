@@ -1,20 +1,17 @@
 class Solution {
   public:
     int countStrings(string &s) {
-        unordered_set<string> uniqueStrings;
+        // code here
+        unordered_set<string> st;
         int n = s.size();
-        
         for (int i = 0; i < n; ++i) {
             for (int j = i + 1; j < n; ++j) {
                 if (i == j) continue;
-                
-                // Swap characters
                 swap(s[i], s[j]);
-                uniqueStrings.insert(s);
-                // Swap back to original
+                st.insert(s);
                 swap(s[i], s[j]);
             }
         }
-        return uniqueStrings.size();
+        return st.size();
     }
 };
