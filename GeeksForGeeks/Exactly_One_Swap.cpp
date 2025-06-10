@@ -4,16 +4,21 @@ class Solution {
     int countStrings(string &s) {
         // code here
         int n = s.size();
-        ll total = 1LL * n * (n - 1) / 2;
-        unordered_map<char, ll> freq;
-        for(char c : s){
-            freq[c]++;
+        vector<ll> freq(256, 0);
+        for(char c : s){ 
+            freq[(unsigned char)c]++;
         }
-        ll swaps = 0;
-        for(auto i : freq){
-            int f = i.second;
-            swaps += f * (f - 1) / 2;
+        ll totalPairs = 1LL * n * (n - 1) / 2;
+        ll samePairs = 0;
+        for(ll f : freq){
+            samePairs += f * (f - 1) / 2;
         }
-        return total - swaps + 1;
+        ll diffPairs = totalPairs - samePairs;
+        if (samePairs > 0){
+            return int(diffPairs + 1);
+        }
+        else{
+            return int(diffPairs);
+        }
     }
 };
