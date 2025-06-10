@@ -1,19 +1,19 @@
 class Solution {
+  using ll = long long;
   public:
     int countStrings(string &s) {
         // code here
         int n = s.size();
-        unordered_set<string> st;
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(i == j){
-                    continue;
-                }
-                swap(s[i], s[j]);
-                st.insert(s);
-                swap(s[i], s[j]);
-            }
+        ll total = 1LL * n * (n - 1) / 2;
+        unordered_map<char, ll> freq;
+        for(char c : s){
+            freq[c]++;
         }
-        return st.size();
+        ll swaps = 0;
+        for(auto i : freq){
+            int f = i.second;
+            swaps += f * (f - 1) / 2;
+        }
+        return total - swaps + 1;
     }
 };
