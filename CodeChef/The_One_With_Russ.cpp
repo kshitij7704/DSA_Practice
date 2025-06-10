@@ -4,10 +4,10 @@ using namespace std;
 int main() {
 	// your code goes here
 	int t;
-	cin>>t;
+	cin >> t;
 	while(t--){
 	    int n,x,k;
-	    cin>>n>>x>>k;
+	    cin >> n >> x >> k;
 	    vector<int>a(n),b(n);
 	    for(int i=0;i<n;i++){
 	        cin>>a[i];
@@ -22,11 +22,11 @@ int main() {
 	        }
 	    }
 	    if(count>=x){
-	        cout<<"YES"<<endl;
+	        cout << "YES" << endl;
 	    }
 	    else{
-	        cout<<"NO"<<endl;
+	        cout << "NO" << endl;
 	    }
 	}
-
+	return 0;
 }
