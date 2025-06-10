@@ -17,10 +17,16 @@ int main() {
 	    }
 	    int count=0;
 	    for(int i=0;i<n;i++){
-	        if(abs(a[i]-b[i])<=k) count++;
+	        if(abs(a[i]-b[i])<=k){
+	            count++;
+	        }
 	    }
-	    if(count>=x) cout<<"YES"<<endl;
-	    else cout<<"NO"<<endl;
+	    if(count>=x){
+	        cout<<"YES"<<endl;
+	    }
+	    else{
+	        cout<<"NO"<<endl;
+	    }
 	}
 
 }
