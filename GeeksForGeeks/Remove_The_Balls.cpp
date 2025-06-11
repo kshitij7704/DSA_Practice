@@ -5,7 +5,7 @@ class Solution {
         int n = color.size();
         stack<pair<int, int>> st;
         for(int i=0;i<n;i++){
-            auto curr = {color[i], radius[i]};
+            pair<int, int> curr = {color[i], radius[i]};
             if(!st.empty() && st.top() == curr){
                 st.pop();
             } 
