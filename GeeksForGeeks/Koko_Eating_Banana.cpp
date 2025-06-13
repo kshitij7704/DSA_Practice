@@ -1,33 +1,30 @@
 class Solution {
-  public:
-    int getHours(const vector<int>& arr, int speed) {
-        int hours = 0;
-        for (int bananas : arr) {
-            // Equivalent to ceil(bananas / speed)
-            hours += (bananas + speed - 1) / speed;
+  private:
+    int getHours(vector<int>& arr, int speed){
+        int hr = 0;
+        for(int i : arr){
+            hr += (i + speed - 1) / speed;
         }
-        return hours;
+        return hr;
     }
-
+  
+  public:
     int kokoEat(vector<int>& arr, int k) {
+        // Code here
         int low = 1;
         int high = *max_element(arr.begin(), arr.end());
-        int answer = high;
-
-        while (low <= high) {
+        int ans = high;
+        while(low <= high){
             int mid = low + (high - low) / 2;
-            int requiredHours = getHours(arr, mid);
-
-            if (requiredHours <= k) {
-                // Try to lower speed
-                answer = mid;
+            int req = getHours(arr, mid);
+            if(req <= k){
+                ans = mid;
                 high = mid - 1;
-            } else {
-                // Need higher speed
+            }
+            else{
                 low = mid + 1;
             }
         }
-
-        return answer;
+        return ans;
     }
 };
