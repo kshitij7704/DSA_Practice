@@ -4,7 +4,7 @@ class Solution {
 private:
     string change(int num, int x, int y){
         string numStr = to_string(num);
-        for(char i : numStr){
+        for(char &i : numStr){
             if(i - '0' == x){
                 i = '0' + y;
             }
